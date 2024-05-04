@@ -12,12 +12,12 @@ public class Task1 {
 
         BigDecimal b = new BigDecimal("1.2345");
         BigDecimal sign = b.multiply(BigDecimal.valueOf(-1));
-        BigDecimal signChangeToMinus = sign.setScale(1,RoundingMode.HALF_EVEN);
+        BigDecimal signChangeToMinus = sign.setScale(1,RoundingMode.HALF_UP);
         System.out.println(signChangeToMinus);
 
         BigDecimal c = new BigDecimal("-45.67");
         BigDecimal sign2 = c.multiply(BigDecimal.valueOf(-1));
-        BigDecimal signChangeToPlus = sign2.setScale(1, RoundingMode.HALF_EVEN);
+        BigDecimal signChangeToPlus = sign2.setScale(1, RoundingMode.HALF_UP);
         System.out.println(signChangeToPlus);
     }
 }
