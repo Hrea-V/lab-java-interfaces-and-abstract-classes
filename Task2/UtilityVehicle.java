@@ -1,7 +1,7 @@
 package Task2;
 
 public class UtilityVehicle extends Car{
-    Boolean fourWheelDrive = true;
+    boolean fourWheelDrive = true;
 
     @Override
     String getInfo() {

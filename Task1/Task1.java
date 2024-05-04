@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 public class Task1 {
     public static void main(String[] args) {
         BigDecimal a = new BigDecimal("4.2545");
-        BigDecimal displayVal = a.setScale(2, RoundingMode.HALF_EVEN); //should return 4.25
+        BigDecimal displayVal = a.setScale(2, RoundingMode.HALF_UP); //should return 4.25
         System.out.println(displayVal);
 
 

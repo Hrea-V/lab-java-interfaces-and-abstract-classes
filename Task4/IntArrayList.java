@@ -15,9 +15,11 @@ public class IntArrayList implements IntList{
         }
         arrayList[currentIndex++] = number;
     }
-        int idNum = 0;
-    @Override
-    public void get(int id) {
-        idNum = id;
+
+    public int get(int id) {
+        if (id < 0 || id >= currentIndex) {
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
+        return arrayList[id];
     }
 }

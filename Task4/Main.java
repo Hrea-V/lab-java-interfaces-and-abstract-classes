@@ -6,8 +6,6 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
         var array = new IntArrayList();
-        array.get(1);
-        System.out.println("ID: " + array.idNum);
         array.add(1);
         array.add(2);
         array.add(3);
@@ -25,11 +23,10 @@ public class Main {
                 System.out.print(array.arrayList[check] + " ");
             }
         }
-
+        System.out.println("\nIndex: " + array.currentIndex);
 
         var vector = new IntVector();
-        vector.get(1);
-        System.out.println("\nID: " + vector.idNum);
+
         vector.add(1);
         vector.add(2);
         vector.add(3);
@@ -57,7 +54,7 @@ public class Main {
                 System.out.print(vector.numberArray[check] + " ");
             }
         }
-
+        System.out.println("\nIndex: " + vector.currentIndex);
 
 
         FileWriter file = new FileWriter("README.md");
